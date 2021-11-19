@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>MODULO DE AGREGAR PERSONAS</h2>  
+    </div> 
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="">NOMBRE:</label>
+          <input [(ngModel)]="modelPersona.nombre" name="nombre" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">TELEFONO</label>
+          <input [(ngModel)]="modelPersona.telefono" name="telefono" type="text" class="form-control">
+        </div>
+        <button (click)="Actualizar(modelPersona)" class="btn btn-success">Guardar Cambios</button>
+      </form>
+    </div>   
+  </div>
+</div>
